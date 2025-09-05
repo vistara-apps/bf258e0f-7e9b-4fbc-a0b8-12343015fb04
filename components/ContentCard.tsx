@@ -10,9 +10,10 @@ interface ContentCardProps {
   post: Post;
   variant?: 'premiumPost' | 'paywall';
   onUnlock?: () => void;
+  onEngagement?: (type: 'like' | 'comment' | 'share') => void;
 }
 
-export function ContentCard({ post, variant = 'premiumPost', onUnlock }: ContentCardProps) {
+export function ContentCard({ post, variant = 'premiumPost', onUnlock, onEngagement }: ContentCardProps) {
   const creator = MOCK_CREATORS.find(c => c.creatorId === post.creatorId);
   const isPaywalled = variant === 'paywall' && post.isPremium;
 
@@ -70,16 +71,22 @@ export function ContentCard({ post, variant = 'premiumPost', onUnlock }: Content
               type="like" 
               count={post.likes}
               variant="like"
+              onClick={() => onEngagement?.('like')}
+              rewardTokens={1}
             />
             <EngagementButton 
               type="comment" 
               count={post.comments}
               variant="comment"
+              onClick={() => onEngagement?.('comment')}
+              rewardTokens={3}
             />
             <EngagementButton 
               type="share" 
               count={post.shares}
               variant="share"
+              onClick={() => onEngagement?.('share')}
+              rewardTokens={5}
             />
           </div>
           
