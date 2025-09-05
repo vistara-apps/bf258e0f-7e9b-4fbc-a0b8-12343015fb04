@@ -1,0 +1,14 @@
+{
+  "name": "SocialFi Connect",
+  "description": "SocialFi Connect is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://bf258e0f-7e9b-4fbc-a0b8-12343015fb04.vercel.app",
+  "properties": {
+    "app": {
+      "name": "SocialFi Connect",
+      "description": "SocialFi Connect is a Base Mini App built with Zara.",
+      "url": "https://bf258e0f-7e9b-4fbc-a0b8-12343015fb04.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}

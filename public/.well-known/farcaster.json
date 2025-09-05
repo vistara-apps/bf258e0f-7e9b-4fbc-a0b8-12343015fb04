@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "SocialFi Connect",
+    "subtitle": "Built with Zara",
+    "description": "SocialFi Connect is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://bf258e0f7e9b4fbca0b812343015fb04-6mb8.vercel.app",
+    "splashImageUrl": "https://bf258e0f7e9b4fbca0b812343015fb04-6mb8.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://bf258e0f7e9b4fbca0b812343015fb04-6mb8.vercel.app/image.png",
+    "tagline": "SocialFi Connect",
+    "screenshotUrls": [
+      "https://bf258e0f7e9b4fbca0b812343015fb04-6mb8.vercel.app/screenshot.png",
+      "https://bf258e0f7e9b4fbca0b812343015fb04-6mb8.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://bf258e0f7e9b4fbca0b812343015fb04-6mb8.vercel.app/api/webhook"
+  }
+}
