@@ -1,0 +1,92 @@
+export const MOCK_CREATORS = [
+  {
+    creatorId: '1',
+    fName: 'Alex Chen',
+    bio: 'Web3 Developer & DeFi Educator. Building the future of finance.',
+    avatarUrl: '/api/placeholder/64/64',
+    baseAddress: '0x1234...5678',
+    followerCount: 12500,
+    totalEarnings: 2450.75,
+  },
+  {
+    creatorId: '2',
+    fName: 'Sarah Kim',
+    bio: 'NFT Artist & Community Builder. Creating digital experiences.',
+    avatarUrl: '/api/placeholder/64/64',
+    baseAddress: '0x2345...6789',
+    followerCount: 8900,
+    totalEarnings: 1890.25,
+  },
+  {
+    creatorId: '3',
+    fName: 'Marcus Johnson',
+    bio: 'Crypto Analyst & Trading Coach. Market insights daily.',
+    avatarUrl: '/api/placeholder/64/64',
+    baseAddress: '0x3456...7890',
+    followerCount: 15200,
+    totalEarnings: 3200.50,
+  },
+];
+
+export const MOCK_SUBSCRIPTION_TIERS = [
+  {
+    id: '1',
+    name: 'Supporter',
+    price: 5,
+    description: 'Get access to exclusive content and community',
+    perks: ['Exclusive posts', 'Community access', 'Monthly Q&A'],
+  },
+  {
+    id: '2',
+    name: 'VIP',
+    price: 15,
+    description: 'Premium access with direct creator interaction',
+    perks: ['All Supporter perks', 'Direct messages', 'Weekly calls', 'Early access'],
+    isPopular: true,
+  },
+  {
+    id: '3',
+    name: 'Elite',
+    price: 50,
+    description: 'Ultimate access with collaboration opportunities',
+    perks: ['All VIP perks', '1-on-1 sessions', 'Collaboration opportunities', 'Revenue sharing'],
+  },
+];
+
+export const MOCK_POSTS = [
+  {
+    postId: '1',
+    creatorId: '1',
+    content: 'Deep dive into the latest DeFi protocols and yield farming strategies. This week we\'re analyzing Uniswap V4 and its potential impact.',
+    contentType: 'text' as const,
+    isPremium: true,
+    price: 2,
+    timestamp: '2024-01-15T10:30:00Z',
+    likes: 45,
+    comments: 12,
+    shares: 8,
+  },
+  {
+    postId: '2',
+    creatorId: '2',
+    content: 'New NFT collection drop! Behind the scenes of my creative process and the story behind each piece.',
+    contentType: 'image' as const,
+    isPremium: false,
+    timestamp: '2024-01-15T08:15:00Z',
+    likes: 89,
+    comments: 23,
+    shares: 15,
+  },
+  {
+    postId: '3',
+    creatorId: '3',
+    content: 'Market analysis: Why I think we\'re entering a new bull cycle. Technical analysis and on-chain metrics included.',
+    contentType: 'text' as const,
+    isPremium: true,
+    price: 3,
+    timestamp: '2024-01-15T06:45:00Z',
+    likes: 67,
+    comments: 34,
+    shares: 22,
+  },
+];

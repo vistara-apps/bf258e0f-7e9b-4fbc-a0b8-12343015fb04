@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600 text-white min-h-screen;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 rounded-lg shadow-card;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-white bg-opacity-20 text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-30 transition-all duration-200 backdrop-blur-sm border border-white border-opacity-30;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 hover:bg-opacity-15 transition-all duration-200;
+  }
+  
+  .creator-card {
+    @apply glass-card p-6 hover:bg-opacity-15 transition-all duration-200 cursor-pointer;
+  }
+  
+  .content-card {
+    @apply glass-card p-4 hover:bg-opacity-15 transition-all duration-200;
+  }
+  
+  .subscription-tier {
+    @apply glass-card p-6 hover:bg-opacity-15 transition-all duration-200 cursor-pointer border-2 border-transparent hover:border-white hover:border-opacity-30;
+  }
+  
+  .engagement-button {
+    @apply flex items-center gap-2 px-3 py-2 rounded-md bg-white bg-opacity-10 hover:bg-opacity-20 transition-all duration-200 text-sm font-medium;
+  }
+}
